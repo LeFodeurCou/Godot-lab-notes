@@ -1,0 +1,1 @@
+>A hand-made block that has a script attached to it to teleport the [[Root/Notes/Godot/RoadMap/WIP/Player]] in different worlds. Also all portal changes their color when passing through one of them.
