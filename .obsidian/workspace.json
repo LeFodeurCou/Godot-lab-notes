@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "73888f77a6574876",
+    "type": "split",
+    "children": [
+      {
+        "id": "8338e9338f6b307d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "44b37df2c7a0927a",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Root/RoadMapV0.2.0.canvas",
+                "viewState": {
+                  "x": -80,
+                  "y": 380,
+                  "zoom": -1.7988048479840693
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "RoadMapV0.2.0"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fda1292e657e0b48",
+    "type": "split",
+    "children": [
+      {
+        "id": "05dba492772d38ae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "87b37b27308064ef",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c3fc999282489e89",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "9b6b076f68f19209",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "77b7b75afafba083",
+    "type": "split",
+    "children": [
+      {
+        "id": "f6e65c1ceaca1e46",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d2275bc5c3b073a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Bienvenue.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rétrolien pour Bienvenue"
+            }
+          },
+          {
+            "id": "589fd7c994719d3e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Bienvenue.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Liens sortants de Bienvenue"
+            }
+          },
+          {
+            "id": "f8ce6d0d59e838c1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Mots-clés"
+            }
+          },
+          {
+            "id": "69c88700dcf5363a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Toutes les propriétés"
+            }
+          },
+          {
+            "id": "d038aebf06b318f6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Bienvenue.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Plan de Bienvenue"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "44b37df2c7a0927a",
+  "lastOpenFiles": [
+    "Root/RoadMapV0.2.0.canvas",
+    "Root/RoadMap/Environment/Global/Orientable.md",
+    "Root/RoadMap/Environment/Component/Portal.md",
+    "Root/RoadMapV0.1.0.canvas",
+    "Root/RoadMap/Behavior/ProceduralGeneration/Procedural Generator.md",
+    "Root/RoadMap/Game - Singleton Game Manager.md",
+    "Root/RoadMap/World/Static world.md",
+    "Root/RoadMap/World/Dynamic world.md",
+    "Root/RoadMap/Videos.md",
+    "Root/RoadMap/World/Dynamic",
+    "Root/RoadMap/World",
+    "Root/RoadMap/UI/Context UI.md",
+    "Root/RoadMap/UI/Settings/Settings panel.md",
+    "Root/RoadMap/UI/Settings/Display.md",
+    "Root/RoadMap/UI/Out Game Main Menu.md",
+    "Root/RoadMap/UI/Settings/Display",
+    "Root/RoadMap/UI/Settings",
+    "Root/RoadMap/UI/In Game Main Menu.md",
+    "Root/RoadMap/States/Game State.md",
+    "Root/RoadMap/UI",
+    "Root/RoadMap/Player/Player.md",
+    "Root/RoadMap/States",
+    "Root/RoadMap/Player/Context Camera.md",
+    "Root/RoadMap/Player/Camera/Camera H&S.md",
+    "Root/RoadMap/Builds.md",
+    "Root/RoadMap/Player/Camera",
+    "Root/RoadMap/Player",
+    "Root/RoadMap/Meta/i18n/Translation.md",
+    "Root/RoadMap/Environment/Room/Basic Room.md",
+    "Root/RoadMap/Environment/Global/Spawn Point.md",
+    "Root/RoadMap/Environment/Global/Orientation.md",
+    "Root/RoadMap/Effects/Screen/Screen Transition.md",
+    "Root/RoadMap/Debug/Debug Overlay.md",
+    "Root/RoadMap/Behavior/ProceduralGeneration/World Creator.md",
+    "Root/RoadMap/Meta/i18n",
+    "Root/RoadMap/Meta",
+    "Root/Ideas.md"
+  ]
+}

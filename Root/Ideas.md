@@ -1,0 +1,188 @@
+>To put some ideas in total disorderd chaos
+
+# TODOs
+
+- TODO : For the ProceduralGenerator :
+	- ~~A frontier cell list
+		- ~~Also if a cell is surrounded but without being extended, we have to remove it from the frontier list (each time we place a cell we need to check its neighbors to put it or not in the frontier cell list, but also check its neighbor to remove them if they become surrounded)~~
+	- ~~A random frontier remover
+		- ~~if 4 neighbors
+			- ~~always remove it
+		- ~~For 3
+			- ~~good chances to be removed
+		- ~~For 2
+			- ~~Can sometimes be removed
+		- ~~for 1
+			-~~ may removed while the frontier is not empty (to avoid breaking the algo)
+	- ~~Socket placement with some randomness
+		- ~~Always soket to the previous sell
+		- ~~Check neighboors number AND / OR if neighbors exists in the frontier list
+			- ~~4 : can to be socketed to another one
+			- ~~3 : rarely be socketed to another
+			- ~~2 : almost never socketed
+		- ~~See the rate to not create too much sockets
+		- ~~Add the loop engine which is under progress
+	- Make a specific process for one cell, may be the last, like the maze output :)
+	- ~~Make a config object that can handle
+		- ~~corridorCoefficient
+		- ~~frontierCoefficient(s)
+		- ~~socketCoefficient(s)
+		- ~~May be some starting data
+		- ~~May be some ending data
+	- Look for **Breadth First Search (BFS)** to make a maze heat map
+		- Or make a separate grid that start from the center with a heat of 0 and browse the grid from this point to add 1 then 2 etc.
+		- More optimized than any other algo to read it after, because each Cell already now it's position on the heat map
+	- Depth-first search
+	- ~~Look to make a maze skeleton then expand rooms and corridor later with a second phase
+	- ~~Make a [[Maze visual debugger]] (or ask anew the AI to make a 2D one :D)
+	- More advanced things exist (noise fields, wave collapse, BSP, etc.)
+	- The clean solution is **direction maps**.
+	- Do some snapshot of the maze to be reused later, in the same "game" session or something like that
+	- Add some region type to a cell to make better gamedesign
+	-  ~~[[Seed generation]]
+	- ~~Make a direction bias
+	- ~~Make a noise bias
+	- ~~Make a better room distribution
+		- ~~Based on graph completion
+	- See again for packed coordinates since bit computation for direction seems to work well
+	- Make the first 3D floor
+	- Make 3D connections
+	- Optimize the 3D rendering at max
+	- Make the algo for a 3D maze (need [[Camera]], [[Roof]], and [[Stairs]] Before)
+	- See to connect [[Root/Notes/Godot/RoadMap/TO DO/Components/Maze|Maze]] (as chunk ?) to avoid overlapping and discontinuity
+		- Border handshake
+	- ~~See how to use the actual algo for exteriors, like an open world (I guess making a config option to fullfill all neighbors ? But what about tha fact chunk should be squared ? cellNumer must be width * height and we need to pass max heat too ? And may be more ? Or changing the algo ?)
+		- ~~Inaccessible terrain outside cells
+		- ~~For Minecraft like : sampling + boundaries through the config
+	- We can use the cell type also as ID (like room-ze6f4ze64)
+	- Voronoi biome implementation
+		- Biomes can generate some meta data like temperatuer, humidity, height, weridness, magic concentration, corruption etc.
+			- Then choosing a biome can become a "simple" mapping from those caracteristics
+	- **Poisson Disk Sampling**
+		- To a more natural distribution of POI (Points Of Interests) like loot, special ennemies, structures etc.
+			- Can also be used to place some rooms
+	- Flow-field vs Direction Bias
+		- Each position as it's own direction, dependant by an angle (TAU)
+	- multi-source generation
+		- Instead of 1 starting point → multiple seeds growing and colliding.
+			- unlocks
+				- continents
+				- multiple dungeons merging
+				- natural borders
+				- faction territories
+			- And it plugs directly into the frontier system
+	- Graph layers
+		- Layer 1 — Structure graph
+			- current generator
+			- topology
+		- Layer 2 — Field maps
+			- noise
+			- flow
+			- biome
+			- height
+		- Layer 3 — Masks
+			- rivers
+			- mountains
+			- zones
+		- Layer 4 — Semantics
+			- POI
+			- gameplay
+			- AI zones
+- TODO for the WorldGenerator
+	- Make 3D optimization
+	- See how to make a "land", like the ground of a zone (if not Minecraft style)
+- TODO for cameras
+	- ~~Refine the TP controller
+	- ~~Make the TOP (H&S) controller
+	- ~~Refacto the CameraTactical into it's own controller
+	- ~~Refacto the CameraCinamatic into it's own controller
+	- ~~Add a CameraFree with it's own controller
+		- ~~CameraDebug instead, works the same
+	- ~~Add a CameraManager that handle all cameras instead of the player script AND that also handle the global movements (like jump / fall) with a way to override them
+	- ~~Add a CreativeCamera / DebugCamera that allow the player to flight
+		- ~~Instead added a creative mode from the Player to allow flight instead of jump and fall from the ContextCamera, allowing creative mode to be available for all cameras
+	- Make cameras as neighbors of the player, not as children
+- TODO for global player
+	- ~~Make the player global ...
+	- ~~Make the debug global !
+	- ~~Make a portal system using portal transform to let the player appears near instaed in (0, 0, 0)
+		- TODO Some fixes again
+			- Local portals
+			- Portals rotation
+			- Arrival occupied
+	- Make a HUD :o
+- TODO portals
+	- Fix current portals
+	- Add a portal like Minecraft
+	- Add a portal like H&S
+- TODO contextes
+	- context stack
+		- push inventory (open)
+		- pop inventory (close)
+	- UI Context
+		- T~~ODO fix the mouse cursor when player be in a view that doesn't have any cursor x)
+		- We have a fully working In Game Main Menu now
+			- TODO add settings
+			- TODO add keybind
+			- TODO add a way to manually save the game !!!
+			- We will also be able to make some other player interfaces now :3
+				- unlock a menu for some portals
+		- We also have a fully working Out Game Main Menu now
+			- TODO add settings
+			- TODO add keybind
+			- TODO add a way to load game (after adding the save of course ...)
+			- TODO add a way to share settings, keybind etc. across all GUIs, In Game Main Menu should handle them too, but it can be possible to have some Uis (or even some display in game) that show keybind by example (like press "X" key to interact)
+		- We can use flags in UIs, especially to force the player to make choises by example (like rewards, or a story non avoidable choice)
+		- To ensure the unicity of UIs, we could use a dictionary with some UIs Ids made on the fly ?
+---
+# Articles
+- Write articles
+	- How I discovered Godot
+		- A friend of mine + need of creativity + good at coding
+	- How I used the IA
+		- ChatGPT
+			- as professor to learn Godot and GDScript
+			- as professor to learn some algorithm
+			- as code proposer
+				- reading and understang what it gaves to me
+				- Correcting if necessary
+				- Adapting to my needs, not stupidly applying
+				- Refactoring to have a better clean code
+			- as rubber duck too
+	- How I passed hours, days etc. with Godot
+		- Starting with very small things
+		- Experimenting
+		- The lab
+		- The procedural generation
+		- First 3D Generation
+		- Portals to worlds
+		- World streaming
+		- Global player
+		- Portal problems
+			- Gameplay decision
+		- First Gameplay
+	- How I was organized
+		- At the start : nothing
+		- AI : ChatGPT (free usage)
+		- Start to need to take notes
+			- Obsidian
+			- Same way than experimentate with Godot
+	- Describe some systems : how they started, thinkink step, coding step etc.
+		- Procedural generation that can lead to a game like Minecraft / hytale, Bomberman, zelda, Hero Quest, chess etc.
+---
+# Sharing
+- Share some pieces of GDScript codes as library if possible
+	- ProceduralGenerator
+		- With its models and config
+		- Some presets
+		- Its usage
+- Open source projects
+---
+# Gameplay
+- Cut to one portal type (or may be two)
+	- H&S style
+	- Minecraft style
+- First Gameplay loop
+	- First 10 minutes amazing gameplay
+	- “My game is a game where the player ------ by ------ in order to ------.”
+	- Make it as a part of a global universe / world, reusable for later
