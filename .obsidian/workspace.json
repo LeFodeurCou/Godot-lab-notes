@@ -11,17 +11,14 @@
             "id": "44b37df2c7a0927a",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Root/RoadMapV0.2.0.canvas",
-                "viewState": {
-                  "x": 242.18473638415972,
-                  "y": -32.74603916174311,
-                  "zoom": -1.1702745334406632
-                }
+                "file": "Root/RoadMap/Behavior/ProceduralGeneration/World Creator.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "RoadMapV0.2.0"
+              "icon": "lucide-file",
+              "title": "World Creator"
             }
           }
         ]
@@ -188,6 +185,7 @@
   },
   "active": "44b37df2c7a0927a",
   "lastOpenFiles": [
+    "Root/RoadMapV0.2.0.canvas",
     "Root/Ideas.md",
     "Root/Home.md",
     "Root/RoadMap/Videos.md",
@@ -213,8 +211,6 @@
     "Root/RoadMap/Environment/Component/Portal.md",
     "Root/RoadMap/Effects/Screen/Screen Transition.md",
     "Root/RoadMap/Debug/Debug Overlay.md",
-    "Root/RoadMap/Behavior/ProceduralGeneration/World Creator.md",
-    "Root/RoadMapV0.2.0.canvas",
     "Root/RoadMapV0.1.0.canvas",
     "Root/RoadMap/UI/Settings",
     "Root/RoadMap/Player/Camera",

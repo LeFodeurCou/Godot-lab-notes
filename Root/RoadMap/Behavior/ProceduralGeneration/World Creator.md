@@ -2,6 +2,8 @@
 
 # TODO
 
+- Fix the wall / floor placement
+	- Seen in debug camera, walls and floors are not perfectly aligned at the bottom
 - Design a maze output
 - Optimize 3D rendering
 - See how to make a "land", like the ground of a zone (if no Minecraft style)
