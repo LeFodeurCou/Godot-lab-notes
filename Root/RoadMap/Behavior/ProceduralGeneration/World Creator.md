@@ -6,7 +6,7 @@
 	- Seen in debug camera, walls and floors are not perfectly aligned at the bottom
 - Design a maze output
 - Optimize 3D rendering
-- See how to make a "land", like the ground of a zone (if no Minecraft style)
+- See how to make a "land", like the ground of a zonee (if no Minecraft style)
 - Make a dual grid for better 3D placement
 - Allow world build not only from floor and walls
 - Use the seed handler to make some randomness by the TerrainRng object
