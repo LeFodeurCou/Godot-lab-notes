@@ -20,3 +20,10 @@ Idea : Having to chase some entities to get skills, like creature/monster/bosses
 - Some skills can be passives
 - "Creatures" can also give some stats ?
 - What about a player progression (passives tree like POE or may be like Last Epoch) ? How can it interact with "creature skills" ?
+- Define "creature" types / behavior / family / elements etc. to have tagged skills.
+- May be more, with tagged skills we can imagine many "creatures" having the same "base skill" but with different tags (like : "insect skill", "undeath skill", "bird skill" etc.) ?
+- May be a creature can have many types / behavior / familly / elements etc. ?
+- May be a creature with one type / behavior / familly / element can have some skills from another even if it not matches its ? Then in this case how to define skills types etc. ? May be adding a relationship between elements etc. to let the game decide what kind of skill a "creature" can have ? 
+- With previous concepts, can we improve by adding a (little ?) bonus some skills depending if they match with the "creature", like in Pokemon with the stab (a normal pokemon using a normal attack will have a damage bonus) ?
+- So a skill can also have many tags, not only tags from their owner "creature" (like "area", "spell", "melee", "dot" etc. but also "insect"/"fire" etc.)
+- Can all mob be "captured" ? Or just some specific ones ?
